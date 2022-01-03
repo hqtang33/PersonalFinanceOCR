@@ -9,3 +9,6 @@ Tool to convert TNG eWallet transactions to BudgetMakers compatible CSV file
 3. Filter the result with date range.
 4. Select the result by clicking the date in the list.
 5. Click `Export` to export the filtered CSV.
+
+### Environment
+Visual Studio 2019
