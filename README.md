@@ -1,6 +1,7 @@
 # PersonalFinanceOCR
 
-## Utilities to convert TNG eWallet transactions to BudgetMakers compatible CSV file
+### What is is this
+Tool to convert TNG eWallet transactions to BudgetMakers compatible CSV file
 
 ### How to use
 1. Export PDF based transaction statement in TNG eWallet App.
