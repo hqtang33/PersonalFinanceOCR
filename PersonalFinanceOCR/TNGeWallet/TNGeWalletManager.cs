@@ -110,9 +110,12 @@ namespace PersonalFinanceOCR.TNGeWallet
             {
                 if (regex.IsMatch(line))
                 {
-                    if (line.Contains("Payment (via GO+")) continue; // SPECIAL HANDLING
-                    if (line.Contains("Cash In")) continue; // SPECIAL HANDLING
-                    if (line.Contains("Cash Out")) continue; // SPECIAL HANDLING
+                    if(line.Contains("Via FPX to GO+") == false)
+                    {
+                        if (line.Contains("Payment (via GO+")) continue; // SPECIAL HANDLING
+                        if (line.Contains("Cash In")) continue; // SPECIAL HANDLING
+                        if (line.Contains("Cash Out")) continue; // SPECIAL HANDLING
+                    }
 
                     filteredTransaction.Add(line);
                 }

@@ -1,4 +1,5 @@
 ﻿using PersonalFinanceOCR.Common;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,15 +14,16 @@ namespace PersonalFinanceOCR.TNGeWallet
 
             using(StreamWriter file = new StreamWriter(fileName))
             {
-                file.WriteLine("Date,Payee,Note,Amount");
+                file.WriteLine("Date,Payee,Note,Expense,Income");
                 foreach (var transaction in transactions)
                 {
                     string date = transaction.Date.ToString("dd/MM/yyyy");
                     string payee = transaction.Description;
-                    string amount = transaction.Amount.ToString();
+                    string debit = transaction.Amount < 0 ? Math.Abs(transaction.Amount).ToString() : string.Empty;
+                    string credit = transaction.Amount > 0 ? Math.Abs(transaction.Amount).ToString() : string.Empty;
                     string type = transaction.Type;
                     string note = $"Type: {type} | Ref: {transaction.Reference} | Id: {transaction.TransactionId}";
-                    file.WriteLine($"{date},{payee},{note},{amount}");
+                    file.WriteLine($"{date},{payee},{note},{debit},{credit}");
                 }
             }
         }
