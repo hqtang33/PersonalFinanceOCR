@@ -1,6 +1,6 @@
 # PersonalFinanceOCR
 
-### What is is this
+### Introduction
 Tool to convert TNG eWallet transactions to BudgetMakers compatible CSV file
 
 ### How to use
