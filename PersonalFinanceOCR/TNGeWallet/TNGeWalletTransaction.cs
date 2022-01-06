@@ -33,6 +33,7 @@ namespace PersonalFinanceOCR.TNGeWallet
             { "GO+ Daily Earnings", "GO+_DAILY_EARNINGS" },
             { "Refund", "REFUND" },
             { "Cashback", "CASHBACK" },
+            { "Cash Reward", "CASH_REWARD" },
         };
 
         private static Dictionary<string, string> debitMap = new Dictionary<string, string>
