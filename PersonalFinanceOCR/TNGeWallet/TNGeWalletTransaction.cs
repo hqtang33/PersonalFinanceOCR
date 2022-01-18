@@ -38,8 +38,10 @@ namespace PersonalFinanceOCR.TNGeWallet
 
         private static Dictionary<string, string> debitMap = new Dictionary<string, string>
         {
+            { "DuitNow QR TNGD", "DUITNOW_QR_TNGD" },
             { "DuitNow QR", "DUITNOW_QR" },
             { "PayDirect Payment", "PAYDIRECT_PAYMENT" },
+            { "RFID Payment", "RFID_PAYMENT" },
             { "eWallet Cash Out", "EWALLET_CASH_OUT" },
             { "GO+ Cash Out", "GO+_CASH_OUT" },
             { "Transfer to Wallet", "TRANSFER_TO_WALLET" },
