@@ -31,6 +31,7 @@ namespace PersonalFinanceOCR.TNGeWallet
             { "GO+ Cash In", "GO+_CASH_IN" },
             { "Receive from Wallet", "RECEIVE_FROM_WALLET" },
             { "GO+ Daily Earnings", "GO+_DAILY_EARNINGS" },
+            { "GO+ Promo", "GO+_PROMO" },
             { "Refund", "REFUND" },
             { "Cashback", "CASHBACK" },
             { "Cash Reward", "CASH_REWARD" },
